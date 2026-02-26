@@ -4,11 +4,11 @@ import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const navLinks = [
-  { label: "Services", href: "/#services" },
+  { label: "Services", href: "/services" },
   { label: "Listings", href: "/listings" },
-  { label: "About", href: "/#about" },
-  { label: "Testimonials", href: "/#testimonials" },
-  { label: "Contact", href: "/#contact" },
+  { label: "About", href: "/about" },
+  { label: "Testimonials", href: "/testimonials" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const Header = () => {
@@ -46,7 +46,7 @@ const Header = () => {
 
           <div className="hidden md:flex items-center gap-3">
             <Link
-              to="/#contact"
+              to="/contact"
               className="rounded-xl bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-all duration-200 hover:opacity-90"
             >
               List With Lajak
@@ -83,7 +83,7 @@ const Header = () => {
                 </Link>
               ))}
               <Link
-                to="/#contact"
+                to="/contact"
                 onClick={() => setMobileOpen(false)}
                 className="mt-2 rounded-xl bg-primary px-5 py-2.5 text-center text-sm font-medium text-primary-foreground"
               >
